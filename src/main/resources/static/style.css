@@ -1,0 +1,164 @@
+:root{
+
+}
+*,*::after,*::before{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    background: #00000055;
+    position: absolute;
+    padding-top: 10%;
+    
+}
+.modal-content{
+    position: relative;
+    padding: 8px;
+    border-radius: 4px;
+    margin: auto;
+    width: 300px;
+    background: #e0e0e0;
+}
+form{
+    padding: 8px;
+}
+.input{
+    width: 100%;
+    border:2px solid #856868;
+    padding: 8px;
+    border-radius: 6px;
+}
+.form-component{
+    margin: 8px 0;
+    gap: 4px;
+}
+.hidden{
+    display: none;
+}
+.container{
+    width: 100%;
+    max-width: 440px;
+    border: 1px solid burlywood;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 16px;
+}
+.todo-header{
+    color: #ffc6c6;
+    background: #534141;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 4px;
+}
+.title{
+    font-weight: 600;
+    font-size: 20px;
+}
+.todo-body{
+    padding: 8px;
+    margin: 8px;
+}
+.b-header{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-icon{
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffc6c6;
+}
+.btn:active{
+ outline: 2px solid blue;   
+}
+
+#closeModal{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+#openModal{
+       padding: 4px 8px;
+       cursor: pointer; 
+}
+.todo-add-btn{
+    padding: 8px;
+    width: 100%;
+    font-weight: 600;
+}
+#todolist{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+
+}
+.todo-item{
+    border:1px solid #856868;
+    border-radius: 8px;
+    padding: 8px;
+}
+.item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.item-header button{
+    padding: 4px;
+    border: #856868;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #e0e0e0;
+}
+.item-header .btn-red{
+    background: #c43f3f;
+}
+.item-header .btn-blue{
+    background: #3f53c4;
+}
+.delModal{
+    margin: 8px;
+}
+.confirm-btn{
+    padding: 8px;
+    background: #c43f3f;
+    color: #f9fbfd;
+    font-weight: 600;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-top: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+.todo-title{
+    font-weight: bold;
+    color: #534141;
+    text-decoration: underline;
+}
+.todo-disription{
+    color: #534141;
+}
+.not-found{
+    padding: 8px;
+    font-weight: bold;
+    color: #534141;
+    text-align: center;
+}
